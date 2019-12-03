@@ -1,0 +1,39 @@
+version: '3'
+
+volumes:
+  beedoo-mysql-data:
+
+services:
+  mysql:
+    image: mariadb
+    container_name: beedoo-mysql
+    volumes:
+      - beedoo-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=beedoo
+      - MYSQL_DATABASE=beedoo
+      - MYSQL_USER=beedoo
+      - MYSQL_PASSWORD=beedoo
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: beedoo-phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    links:
+      - mysql
+
+  app:
+    build: ./
+    image: beedoo-app
+    container_name: beedoo-app
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "80:80"
+    links:
+      - mysql
