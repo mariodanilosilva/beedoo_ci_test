@@ -18,7 +18,7 @@ $ docker-compose up -d
 - importar o dump localizado em application/dump
  
 ```
-$ php -S localhost:80
+$ php -S localhost:80 -t /public
 ```
 
 # Iniciando
