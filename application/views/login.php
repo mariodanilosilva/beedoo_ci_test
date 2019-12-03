@@ -5,26 +5,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/libs/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/libs/animate/animate.css">
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="/public/libs/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/libs/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/libs/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/select2/select2.min.css">
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="/public/libs/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="/libs/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/public/css/util.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/login.css">
+	<link rel="stylesheet" type="text/css" href="/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -37,7 +37,7 @@
 						Beedoo Login
 					</span>
 					<span class="login100-form-avatar">
-						<img src="/public/images/beebot-transparente-wiki.png" alt="AVATAR">
+						<img src="/images/beebot-transparente-wiki.png" alt="AVATAR">
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
@@ -64,21 +64,21 @@
 	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
-	<script src="/public/libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/libs/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="/public/libs/animsition/js/animsition.min.js"></script>
+	<script src="/libs/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script src="/public/libs/bootstrap/js/popper.js"></script>
-	<script src="/public/libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/libs/bootstrap/js/popper.js"></script>
+	<script src="/libs/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="/public/libs/select2/select2.min.js"></script>
+	<script src="/libs/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="/public/libs/daterangepicker/moment.min.js"></script>
-	<script src="/public/libs/daterangepicker/daterangepicker.js"></script>
+	<script src="/libs/daterangepicker/moment.min.js"></script>
+	<script src="/libs/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-	<script src="/public/libs/countdowntime/countdowntime.js"></script>
+	<script src="/libs/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+<!--	<script src="js/main.js"></script>-->
 
 </body>
 </html>
