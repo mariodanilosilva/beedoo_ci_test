@@ -43,13 +43,17 @@ class Users_model extends CI_Model {
         // Col names by alias, used to order by colName, not alias, because
         // doesn't work when this is a datetime column
         $orderable = [
-            'fullname' => 'name',
+			'fullname' => 'U.name',
+			'treated_datetime' => 'U.created_at',
         ];
 
-        $query = $this->db
-            ->select('SQL_CALC_FOUND_ROWS id, id, name as fullname, DATE_FORMAT(created_at, \'%d/%m/%Y %H:%i\') as treated_datetime', false)
-            ->from('users')
-        ;
+		$query = $this->db
+			->select('SQL_CALC_FOUND_ROWS U.id, U.name as fullname, DATE_FORMAT(U.created_at, \'%d/%m/%Y %H:%i\') as treated_datetime', false)
+			->from('users U')
+			->join('user_has_groups UG', 'U.id=UG.user_id', 'INNER')
+			->join('groups G', 'UG.group_id=G.id', 'INNER')
+			->join('teams T', 'G.team_id=T.id', 'INNER')
+			->where('T.id', $this->session->userdata('team')['id']);
 
         //Ao filtrar por "todos" no datatables, ele envia -1
         if ( $limit > 0 ) {
