@@ -12,6 +12,7 @@ class PostListController extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Posts_model','Model');
+		$this->Model = new Posts_model();
     }
 
     public function index()
